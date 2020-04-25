@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Homes Enhanced v1.0.0",
+        "description": [{
+            "text": "Homes System by Gnottero"
+        }],
+        "icon": {
+            "item": "minecraft:map"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "gnottero:gnottero",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
