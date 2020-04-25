@@ -2,7 +2,6 @@
 
     # Summoning the aec to the player current position
         summon minecraft:area_effect_cloud ~ ~ ~ {Age: 0, Duration: 5, Tags: ["gn.home","global.ignore"],Particle:"block air"}
-        tag @s add global.ignore
 
     # Copying the executor gn.id value into the gn.id score of the aec to mark it, then adding the "gn.executor" tag to the executor
         scoreboard players operation @e[type=area_effect_cloud,tag=gn.home,limit=1,sort=nearest] gn.id = @s gn.id
@@ -13,7 +12,6 @@
 
     # Remove the tag "gn.executor"
         tag @s remove gn.executor
-        tag @s remove global.ignore
 
     # Resetting the score and re-enabling the trigger
         scoreboard players reset @s home
