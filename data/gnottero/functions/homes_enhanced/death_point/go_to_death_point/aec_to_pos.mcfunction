@@ -2,7 +2,6 @@
 
     # Summoning the aec to the player current position
         summon minecraft:area_effect_cloud ~ ~ ~ {Age: 0, Duration: 5, Tags: ["gn.death_point","global.ignore"],Particle:"block air"}
-        tag @s add global.ignore
 
     # Copying the executor_death gn.id value into the gn.id score of the aec to mark it, then adding the "gn.executor_death" tag to the executor_death
         scoreboard players operation @e[type=area_effect_cloud,tag=gn.death_point,limit=1,sort=nearest] gn.id = @s gn.id
@@ -14,7 +13,6 @@
     # Remove all players tags
         tag @s remove gn.can_go_back
         tag @s remove gn.executor_death
-        tag @s remove global.ignore
 
     # Resetting the score and re-enabling the trigger
         scoreboard players reset @s back

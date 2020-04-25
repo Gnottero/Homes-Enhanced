@@ -4,7 +4,7 @@
         execute as @a[tag=!gn.has_id] run function gnottero:homes_enhanced/assign_id
 
     # Executing as every player the main function of the home module
-        execute as @a at @s run function gnottero:homes_enhanced/home/main
+        execute as @a[tag=!global.ignore] at @s run function gnottero:homes_enhanced/home/main
 
     # Executing as every player the main function of the death_point module
-        execute as @a at @s run function gnottero:homes_enhanced/death_point/main
+        execute as @a[tag=!global.ignore] at @s run function gnottero:homes_enhanced/death_point/main
