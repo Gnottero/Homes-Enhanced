@@ -1,37 +1,30 @@
-# Creating all the scoreboards that are need by the datapack
+#> This function will run on datapack loading
 
-    # Home required scoreboards
+    #> Initialize all the scoreboards
         scoreboard objectives add gn.home_x dummy
         scoreboard objectives add gn.home_y dummy
         scoreboard objectives add gn.home_z dummy
         scoreboard objectives add gn.home_dim dummy
-    
-    # Home required triggers
-        scoreboard objectives add home trigger
-        scoreboard objectives add sethome trigger
-        scoreboard objectives add delhome trigger
 
+        scoreboard objectives add gn.dest_info dummy
 
-    # Death Point required scoreboards
-        scoreboard objectives add gn.is_dead deathCount
+        scoreboard objectives add gn.player_died deathCount
         scoreboard objectives add gn.death_x dummy
         scoreboard objectives add gn.death_y dummy
         scoreboard objectives add gn.death_z dummy
         scoreboard objectives add gn.death_dim dummy
 
-    # Death Point required trigger
+    #> Initialize all the triggers
+        scoreboard objectives add home trigger
+        scoreboard objectives add sethome trigger
+        scoreboard objectives add delhome trigger
         scoreboard objectives add back trigger
 
-
-    # Enabling all the triggers
+    #> Enable all the triggers
         scoreboard players enable @a sethome
         scoreboard players enable @a home
         scoreboard players enable @a delhome
         scoreboard players enable @a back
-
-    # Creating a scoreboard to store players id and setting up a fake player
-        scoreboard objectives add gn.id dummy
-        scoreboard players set $created.id gn.id 1
-        execute unless score $created.id gn.id matches 1 run scoreboard players set $next.id gn.id 0
-
     
+    #> Call the "gnottero:homes_enhanced/events/register_new_dim/check_dimension" function
+        function gnottero:homes_enhanced/events/register_new_dim/check_dimension

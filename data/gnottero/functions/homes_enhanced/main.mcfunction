@@ -1,10 +1,4 @@
-# Executing all the cores functions
+#> This is the main function, that will run once per tick
 
-    # Assigning an id to every player on the first entrance in the world
-        execute as @a[tag=!gn.has_id,tag=!global.ignore] run function gnottero:homes_enhanced/assign_id
-
-    # Executing as every player the main function of the home module
-        execute as @a[tag=!global.ignore,tag=!global.ignore.pos,tag=!global.ignore.gui] at @s run function gnottero:homes_enhanced/home/main
-
-    # Executing as every player the main function of the death_point module
-        execute as @a[tag=!global.ignore,tag=!global.ignore.pos,tag=!global.ignore.gui] at @s run function gnottero:homes_enhanced/death_point/main
+    #> Call the "gnottero:homes_enhanced/events/main" function
+        execute as @a[tag=!global.ignore.pos, tag=!global.ignore] at @s run function gnottero:homes_enhanced/events/main

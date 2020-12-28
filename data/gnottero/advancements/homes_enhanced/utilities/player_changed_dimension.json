@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:changed_dimension"
+        }
+    },
+    "rewards": {
+        "function": "gnottero:homes_enhanced/events/register_new_dim/check_dimension"
+    }
+}
