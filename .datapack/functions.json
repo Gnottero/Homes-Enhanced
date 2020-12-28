@@ -1,0 +1,1 @@
+{"gnottero":{"homes_enhanced":{"$func":["uninstall"],"events":{"register_new_dim":{"$func":["check_dimension","register_dimension"]}}}}}

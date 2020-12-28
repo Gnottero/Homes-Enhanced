@@ -1,7 +1,5 @@
 #> Check if the player entered in a new dimension and if so register the dimension id
-    #> Called by the "" advancement
-    
-    tellraw @s {"text": "[Event]#> Changed Dimension", "color": "gray"}
+    #> Called by the "gnottero:homes_enhanced/utilities/player_changed_dimension" advancement
 
     #> Revoke the "gnottero:gnotteros_experiment/utils/changed_dimension" advancement
         advancement revoke @s only gnottero:homes_enhanced/utilities/player_changed_dimension

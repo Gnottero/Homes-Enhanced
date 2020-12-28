@@ -1,5 +1,5 @@
 #> Forceload the 0 0 chunk and register the new dimension id
-    #> Called by the "" function
+    #> Called by the "gnottero:homes_enhanced/events/register_new_dim/check_dimension" function
 
     #> Forceload the 0 0 chunk
         forceload add 0 0
