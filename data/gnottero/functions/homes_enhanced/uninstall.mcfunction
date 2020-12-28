@@ -25,7 +25,4 @@
 
     #> Remove all the forceloaded chunks
         forceload remove all
-
-    #> Disable the datapack
-        datapack disable "file/Homes Enhanced"
         
